@@ -1,0 +1,37 @@
+{
+  "name": "Horizont",
+  "tree": {
+    "$className": "DataModel",
+
+    "ServerScriptService": {
+      "$className": "ServerScriptService",
+      "$path": "src/server"
+    },
+
+    "StarterPlayer": {
+      "StarterPlayerScripts": {
+        "$className": "StarterPlayerScripts",
+        "$path": "src/client"
+      }
+    },
+
+    "StarterGui": {
+      "$ignoreUnknownInstances": true,
+      "SettingsGui": {
+        "$className": "ScreenGui",
+        "$ignoreUnknownInstances": true,
+        "SettingsClient": {
+          "$path": "src/gui/SettingsClient.client.luau"
+        }
+      }
+    },
+
+    "ReplicatedStorage": {
+      "$ignoreUnknownInstances": true,
+      "Shared": {
+        "$className": "Folder",
+        "$path": "src/shared"
+      }
+    }
+  }
+}

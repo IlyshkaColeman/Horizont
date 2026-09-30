@@ -1,0 +1,25 @@
+# Environment & OS
+.DS_Store
+Thumbs.db
+desktop.ini
+*.log
+
+# AI Assistant & Local Config
+.gemini/
+.agents/
+
+# Editors
+.idea/
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+
+# Roblox & Rojo Temporary Files
+*.rbxl.lock
+*.rbxlx.lock
+*.rbxmx.temp
+build/
+dist/
+
+# PowerShell scratch scripts
+crop_*.ps1
