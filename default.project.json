@@ -23,6 +23,13 @@
         "SettingsClient": {
           "$path": "src/gui/SettingsClient.client.luau"
         }
+      },
+      "IndexGui": {
+        "$className": "ScreenGui",
+        "$ignoreUnknownInstances": true,
+        "IndexClient": {
+          "$path": "src/gui/IndexClient.client.luau"
+        }
       }
     },
 

@@ -8,6 +8,7 @@ local UserInputService = game:GetService("UserInputService")
 local SoundService = game:GetService("SoundService")
 local Lighting = game:GetService("Lighting")
 local LocalizationService = game:GetService("LocalizationService")
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
 
 local player = Players.LocalPlayer
 local gui = script.Parent :: ScreenGui
@@ -1583,8 +1584,11 @@ indexButton.MouseButton1Up:Connect(function()
 	updateIndexButtonFX()
 end)
 
-indexButton.MouseButton1Click:Connect(function()
-	print("[IndexHUDButton] Clicked - Index UI integration ready.")
+indexButton.Activated:Connect(function()
+	local toggleEvent = ReplicatedStorage:FindFirstChild("ToggleIndexMenu") :: BindableEvent?
+	if toggleEvent then
+		toggleEvent:Fire()
+	end
 end)
 
 -- 3C. SETTINGS HUD BUTTON
